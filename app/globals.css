@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Montserrat:wght@400;700&display=swap');
 
 * {
@@ -47,6 +48,12 @@ svg {
   background-size: cover;
   background-position: center;
   font-family: 'Montserrat', sans-serif;
+=======
+body {
+  background: #000;
+  min-height: 100vh;
+  color: white;
+>>>>>>> fbb5f4818d943f2cb949bf4355455d6e878abd84
 }
 
 .not-found p,
