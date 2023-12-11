@@ -7,10 +7,11 @@ const Logo = () => {
   return (
     <Link className={classes.logo} href="/">
       <Image
-        src={LogoImage.src}
+        src={LogoImage}
         alt="a plate with food on it"
-        width={LogoImage.width}
-        height={1000}
+        priority
+        // width={LogoImage.width}
+        // height={1000}
       />
       NextLevel Food
     </Link>
