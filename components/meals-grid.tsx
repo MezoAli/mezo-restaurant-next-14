@@ -1,6 +1,6 @@
 import classes from "@/styles/meals-grid.module.css";
-import MealItem from "./meals-item";
-const MealsGrid = ({ meals }: any) => {
+import MealItem, { MealsItem } from "./meals-item";
+const MealsGrid = ({ meals }: { meals: MealsItem[] }) => {
   return (
     <ul className={classes.meals}>
       {meals.map((meal: any) => {

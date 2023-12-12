@@ -3,12 +3,14 @@ import Image from "next/image";
 
 import classes from "./meal-item.module.css";
 
-interface MealsItemProps {
+export interface MealsItem {
   title: string;
   slug: string;
   image: string;
   summary: string;
   creator: string;
+  creator_email?: string;
+  instructions?: string;
 }
 
 export default function MealItem({
@@ -17,7 +19,7 @@ export default function MealItem({
   image,
   summary,
   creator,
-}: MealsItemProps) {
+}: MealsItem) {
   return (
     <article className={classes.meal}>
       <header>
