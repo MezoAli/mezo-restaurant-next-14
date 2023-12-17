@@ -5,8 +5,8 @@ import classes from "@/styles/meals-item.module.css";
 
 export interface MealsItem {
   title: string;
-  slug: string;
-  image: string;
+  slug?: string;
+  image: any;
   summary: string;
   creator: string;
   creator_email?: string;
