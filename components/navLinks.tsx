@@ -14,7 +14,7 @@ const NavLinks = () => {
       {menues?.map((item) => {
         const active = pathname === item.link;
         return (
-          <li>
+          <li key={item.name}>
             <Link href={item.link} className={active ? classes.active : ""}>
               {item.name}
             </Link>
