@@ -10,6 +10,11 @@ export const generateMetadata = async ({
   params: { slug: string };
 }) => {
   const meal: MealsItem = await getMeal(params?.slug);
+
+  if (!meal) {
+    notFound();
+  }
+
   return {
     title: meal.title,
     description: meal.summary,
@@ -32,7 +37,8 @@ const SlugMealsPage = async ({ params }: { params: { slug: string } }) => {
           <Image
             src={meal?.image}
             alt={meal?.slug as string}
-            fill
+            width={400}
+            height={400}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />{" "}
         </div>
