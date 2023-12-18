@@ -19,7 +19,7 @@ const SlugMealsPage = async ({ params }: { params: { slug: string } }) => {
         <div>
           <Image
             src={meal?.image}
-            alt={meal?.slug}
+            alt={meal?.slug as string}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />{" "}
